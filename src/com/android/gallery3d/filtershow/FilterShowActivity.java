@@ -1251,6 +1251,7 @@ DialogInterface.OnDismissListener, PopupMenu.OnDismissListener{
             mParseDepthMapTask.execute(uri);
         } else {
             showDualCameraButton(false);
+            stopLoadingIndicator();
         }
 
         if(TruePortraitNativeEngine.getInstance().isLibLoaded()) {
